@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f347592a-f48e-4844-bd85-c561db310e22" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="ProjectId" id="1WFXZrl5rgRRRNkZQ8mip2DWhJa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="translate" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="translate" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/translate.py" />
+      <option name="PARAMETERS" value="out/domain.pddl out/problem.pddl" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.translate" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f347592a-f48e-4844-bd85-c561db310e22" name="Default Changelist" comment="" />
+      <created>1578746375169</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578746375169</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1575" height="466" key="DebuggerActiveHint" timestamp="1587250685550">
+      <screen x="70" y="27" width="1850" height="1052" />
+    </state>
+    <state width="1575" height="466" key="DebuggerActiveHint/70.27.1850.1052@70.27.1850.1052" timestamp="1587250685550" />
+    <state width="913" height="237" key="GridCell.Tab.0.bottom" timestamp="1592649483946">
+      <screen x="70" y="27" width="1850" height="1052" />
+    </state>
+    <state width="913" height="237" key="GridCell.Tab.0.bottom/70.27.1850.1052@70.27.1850.1052" timestamp="1592649483946" />
+    <state width="913" height="237" key="GridCell.Tab.0.center" timestamp="1592649483946">
+      <screen x="70" y="27" width="1850" height="1052" />
+    </state>
+    <state width="913" height="237" key="GridCell.Tab.0.center/70.27.1850.1052@70.27.1850.1052" timestamp="1592649483946" />
+    <state width="913" height="237" key="GridCell.Tab.0.left" timestamp="1592649483946">
+      <screen x="70" y="27" width="1850" height="1052" />
+    </state>
+    <state width="913" height="237" key="GridCell.Tab.0.left/70.27.1850.1052@70.27.1850.1052" timestamp="1592649483946" />
+    <state width="913" height="237" key="GridCell.Tab.0.right" timestamp="1592649483946">
+      <screen x="70" y="27" width="1850" height="1052" />
+    </state>
+    <state width="913" height="237" key="GridCell.Tab.0.right/70.27.1850.1052@70.27.1850.1052" timestamp="1592649483946" />
+    <state width="1181" height="237" key="GridCell.Tab.1.bottom" timestamp="1592649483936">
+      <screen x="70" y="27" width="1850" height="1052" />
+    </state>
+    <state width="1181" height="237" key="GridCell.Tab.1.bottom/70.27.1850.1052@70.27.1850.1052" timestamp="1592649483936" />
+    <state width="1181" height="237" key="GridCell.Tab.1.center" timestamp="1592649483936">
+      <screen x="70" y="27" width="1850" height="1052" />
+    </state>
+    <state width="1181" height="237" key="GridCell.Tab.1.center/70.27.1850.1052@70.27.1850.1052" timestamp="1592649483936" />
+    <state width="1181" height="237" key="GridCell.Tab.1.left" timestamp="1592649483935">
+      <screen x="70" y="27" width="1850" height="1052" />
+    </state>
+    <state width="1181" height="237" key="GridCell.Tab.1.left/70.27.1850.1052@70.27.1850.1052" timestamp="1592649483935" />
+    <state width="1181" height="237" key="GridCell.Tab.1.right" timestamp="1592649483936">
+      <screen x="70" y="27" width="1850" height="1052" />
+    </state>
+    <state width="1181" height="237" key="GridCell.Tab.1.right/70.27.1850.1052@70.27.1850.1052" timestamp="1592649483936" />
+    <state x="914" y="223" width="706" height="807" key="find.popup" timestamp="1592649598460">
+      <screen x="70" y="27" width="1850" height="1052" />
+    </state>
+    <state x="914" y="223" width="706" height="807" key="find.popup/70.27.1850.1052@70.27.1850.1052" timestamp="1592649598460" />
+    <state x="658" y="254" width="672" height="678" key="search.everywhere.popup" timestamp="1587250502266">
+      <screen x="70" y="27" width="1850" height="1052" />
+    </state>
+    <state x="658" y="254" width="672" height="678" key="search.everywhere.popup/70.27.1850.1052@70.27.1850.1052" timestamp="1587250502266" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/translate.py</url>
+          <line>525</line>
+          <option name="timeStamp" value="214" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/translate.py</url>
+          <line>503</line>
+          <option name="timeStamp" value="215" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/translate.py</url>
+          <line>507</line>
+          <option name="timeStamp" value="216" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/translate.py</url>
+          <line>488</line>
+          <option name="timeStamp" value="217" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/instantiate.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="218" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pddl_parser/parsing_functions.py</url>
+          <line>516</line>
+          <option name="timeStamp" value="219" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
