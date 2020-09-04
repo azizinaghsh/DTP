@@ -8,8 +8,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1WFXZrl5rgRRRNkZQ8mip2DWhJa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -18,8 +17,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager">
     <configuration name="translate" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -49,6 +50,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -62,75 +64,76 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1575" height="466" key="DebuggerActiveHint" timestamp="1587250685550">
+    <state x="627" y="233" width="732" height="650" key="#Inspections" timestamp="1599118586568">
       <screen x="70" y="27" width="1850" height="1052" />
     </state>
-    <state width="1575" height="466" key="DebuggerActiveHint/70.27.1850.1052@70.27.1850.1052" timestamp="1587250685550" />
-    <state width="913" height="237" key="GridCell.Tab.0.bottom" timestamp="1592649483946">
+    <state x="627" y="233" width="732" height="650" key="#Inspections/70.27.1850.1052@70.27.1850.1052" timestamp="1599118586568" />
+    <state x="457" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599118387747">
       <screen x="70" y="27" width="1850" height="1052" />
     </state>
-    <state width="913" height="237" key="GridCell.Tab.0.bottom/70.27.1850.1052@70.27.1850.1052" timestamp="1592649483946" />
-    <state width="913" height="237" key="GridCell.Tab.0.center" timestamp="1592649483946">
+    <state x="457" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/70.27.1850.1052@70.27.1850.1052" timestamp="1599118387747" />
+    <state width="1277" height="506" key="DebuggerActiveHint" timestamp="1599219971257">
       <screen x="70" y="27" width="1850" height="1052" />
     </state>
-    <state width="913" height="237" key="GridCell.Tab.0.center/70.27.1850.1052@70.27.1850.1052" timestamp="1592649483946" />
-    <state width="913" height="237" key="GridCell.Tab.0.left" timestamp="1592649483946">
+    <state width="1277" height="506" key="DebuggerActiveHint/70.27.1850.1052@70.27.1850.1052" timestamp="1599219971257" />
+    <state x="781" y="307" width="424" height="497" key="FileChooserDialogImpl" timestamp="1597559892259">
       <screen x="70" y="27" width="1850" height="1052" />
     </state>
-    <state width="913" height="237" key="GridCell.Tab.0.left/70.27.1850.1052@70.27.1850.1052" timestamp="1592649483946" />
-    <state width="913" height="237" key="GridCell.Tab.0.right" timestamp="1592649483946">
+    <state x="781" y="307" width="424" height="497" key="FileChooserDialogImpl/70.27.1850.1052@70.27.1850.1052" timestamp="1597559892259" />
+    <state width="925" height="348" key="GridCell.Tab.0.bottom" timestamp="1599221721800">
       <screen x="70" y="27" width="1850" height="1052" />
     </state>
-    <state width="913" height="237" key="GridCell.Tab.0.right/70.27.1850.1052@70.27.1850.1052" timestamp="1592649483946" />
-    <state width="1181" height="237" key="GridCell.Tab.1.bottom" timestamp="1592649483936">
+    <state width="925" height="348" key="GridCell.Tab.0.bottom/70.27.1850.1052@70.27.1850.1052" timestamp="1599221721800" />
+    <state width="925" height="348" key="GridCell.Tab.0.center" timestamp="1599221721798">
       <screen x="70" y="27" width="1850" height="1052" />
     </state>
-    <state width="1181" height="237" key="GridCell.Tab.1.bottom/70.27.1850.1052@70.27.1850.1052" timestamp="1592649483936" />
-    <state width="1181" height="237" key="GridCell.Tab.1.center" timestamp="1592649483936">
+    <state width="925" height="348" key="GridCell.Tab.0.center/70.27.1850.1052@70.27.1850.1052" timestamp="1599221721798" />
+    <state width="925" height="348" key="GridCell.Tab.0.left" timestamp="1599221721798">
       <screen x="70" y="27" width="1850" height="1052" />
     </state>
-    <state width="1181" height="237" key="GridCell.Tab.1.center/70.27.1850.1052@70.27.1850.1052" timestamp="1592649483936" />
-    <state width="1181" height="237" key="GridCell.Tab.1.left" timestamp="1592649483935">
+    <state width="925" height="348" key="GridCell.Tab.0.left/70.27.1850.1052@70.27.1850.1052" timestamp="1599221721798" />
+    <state width="925" height="348" key="GridCell.Tab.0.right" timestamp="1599221721798">
       <screen x="70" y="27" width="1850" height="1052" />
     </state>
-    <state width="1181" height="237" key="GridCell.Tab.1.left/70.27.1850.1052@70.27.1850.1052" timestamp="1592649483935" />
-    <state width="1181" height="237" key="GridCell.Tab.1.right" timestamp="1592649483936">
+    <state width="925" height="348" key="GridCell.Tab.0.right/70.27.1850.1052@70.27.1850.1052" timestamp="1599221721798" />
+    <state width="925" height="348" key="GridCell.Tab.1.bottom" timestamp="1599221722131">
       <screen x="70" y="27" width="1850" height="1052" />
     </state>
-    <state width="1181" height="237" key="GridCell.Tab.1.right/70.27.1850.1052@70.27.1850.1052" timestamp="1592649483936" />
-    <state x="914" y="223" width="706" height="807" key="find.popup" timestamp="1592649598460">
+    <state width="925" height="348" key="GridCell.Tab.1.bottom/70.27.1850.1052@70.27.1850.1052" timestamp="1599221722131" />
+    <state width="925" height="348" key="GridCell.Tab.1.center" timestamp="1599221722131">
       <screen x="70" y="27" width="1850" height="1052" />
     </state>
-    <state x="914" y="223" width="706" height="807" key="find.popup/70.27.1850.1052@70.27.1850.1052" timestamp="1592649598460" />
-    <state x="658" y="254" width="672" height="678" key="search.everywhere.popup" timestamp="1587250502266">
+    <state width="925" height="348" key="GridCell.Tab.1.center/70.27.1850.1052@70.27.1850.1052" timestamp="1599221722131" />
+    <state width="925" height="348" key="GridCell.Tab.1.left" timestamp="1599221722131">
       <screen x="70" y="27" width="1850" height="1052" />
     </state>
-    <state x="658" y="254" width="672" height="678" key="search.everywhere.popup/70.27.1850.1052@70.27.1850.1052" timestamp="1587250502266" />
+    <state width="925" height="348" key="GridCell.Tab.1.left/70.27.1850.1052@70.27.1850.1052" timestamp="1599221722131" />
+    <state width="925" height="348" key="GridCell.Tab.1.right" timestamp="1599221722131">
+      <screen x="70" y="27" width="1850" height="1052" />
+    </state>
+    <state width="925" height="348" key="GridCell.Tab.1.right/70.27.1850.1052@70.27.1850.1052" timestamp="1599221722131" />
+    <state x="487" y="166" width="1016" height="743" key="SettingsEditor" timestamp="1599119151181">
+      <screen x="70" y="27" width="1850" height="1052" />
+    </state>
+    <state x="487" y="166" width="1016" height="743" key="SettingsEditor/70.27.1850.1052@70.27.1850.1052" timestamp="1599119151181" />
+    <state x="779" y="467" width="428" height="183" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599213184013">
+      <screen x="70" y="27" width="1850" height="1052" />
+    </state>
+    <state x="779" y="467" width="428" height="183" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/70.27.1850.1052@70.27.1850.1052" timestamp="1599213184013" />
+    <state x="914" y="223" width="706" height="807" key="find.popup" timestamp="1599118920176">
+      <screen x="70" y="27" width="1850" height="1052" />
+    </state>
+    <state x="914" y="223" width="706" height="807" key="find.popup/70.27.1850.1052@70.27.1850.1052" timestamp="1599118920176" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/translate.py</url>
-          <line>525</line>
-          <option name="timeStamp" value="214" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/translate.py</url>
-          <line>503</line>
-          <option name="timeStamp" value="215" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/translate.py</url>
-          <line>507</line>
-          <option name="timeStamp" value="216" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/translate.py</url>
-          <line>488</line>
-          <option name="timeStamp" value="217" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/instantiate.py</url>
           <line>55</line>
@@ -138,8 +141,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pddl_parser/parsing_functions.py</url>
-          <line>516</line>
+          <line>524</line>
           <option name="timeStamp" value="219" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/translate.py</url>
+          <line>629</line>
+          <option name="timeStamp" value="220" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pddl_parser/parsing_functions.py</url>
+          <line>520</line>
+          <option name="timeStamp" value="241" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pddl_parser/parsing_functions.py</url>
+          <line>408</line>
+          <option name="timeStamp" value="243" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

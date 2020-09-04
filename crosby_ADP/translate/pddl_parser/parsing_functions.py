@@ -409,7 +409,14 @@ def process_is_free_propositions(overalls, actions, predicates, predicate_dict, 
     return
 
 
-def merge_actions(actions, can_be_compressed = None):
+def POPF_compress(actions):
+    # check end conditions - start adds = null
+    # check starts adds + end deletes = null
+    # check del start and conditions end = null
+    return
+
+
+def merge_actions(actions, can_be_compressed=None):
     new_actions = []
     for i in range(0, len(actions) - 1, 2):
         act_start = actions[i]
@@ -434,7 +441,8 @@ def merge_actions(actions, can_be_compressed = None):
                     break
             j = j + 1
         act_start.effects.extend(act_end.effects)
-    new_actions.extend ([act for act in actions if (act.name.endswith('start') and (can_be_compressed is None or can_be_compressed[act.name]))])
+    new_actions.extend([act for act in actions if
+                        (act.name.endswith('start') and (can_be_compressed is None or can_be_compressed[act.name]))])
     return new_actions
 
 
@@ -446,8 +454,8 @@ def condition_depends_on_effect(action, cond, eff, depend_list, axiom_list, shou
             if action not in depend_list:
                 depend_list.append(action)
                 axiom_list.append(cond)
-            #if cond not in axiom_list:
-                #axiom_list.append(cond)
+            # if cond not in axiom_list:
+            # axiom_list.append(cond)
         return True
 
 
@@ -511,8 +519,8 @@ def parse_task(domain_pddl, task_pddl):
     domain_name, domain_requirements, types, type_dict, constants, predicates, predicate_dict, functions, actions, \
     axioms, overalls = parse_domain_pddl(domain_pddl)
     frees = dict()
-    # process_is_free_propositions(overalls, actions, predicates, predicate_dict, frees)
-    #can_be_compressed = analyze_compressible(actions)
+    process_is_free_propositions(overalls, actions, predicates, predicate_dict, frees)
+    # can_be_compressed = analyze_compressible(actions)
     actions = merge_actions(actions, None)
     task_name, task_domain_name, task_requirements, objects, init, goal, use_metric = parse_task_pddl(task_pddl,
                                                                                                       type_dict,
@@ -608,6 +616,7 @@ def parse_domain_pddl(domain_pddl):
 
     predicate_dict = dict((pred.name, pred) for pred in the_predicates)
 
+    # divide each action into a start and end
     index = 0
     for entry in entries:
         start_entries.append(get_start_end_action(entry, True, type_dict, predicate_dict, the_predicates, overalls))
@@ -676,7 +685,7 @@ def deletes_overall(entry, overall):
                 entry[cond_index].append(precond)
 
 
-def add_start_end_eff_con(eff_con, action_started_predicate, is_start, is_effect, type_dict,
+def add_start_end_eff_con(eff_con, action_started_predicate, action_ended_predicate, is_start, is_effect, type_dict,
                           predicate_dict, actions_name, overalls):
     _con_eff = ['and']
     if eff_con[0] == 'and':
@@ -709,10 +718,16 @@ def add_start_end_eff_con(eff_con, action_started_predicate, is_start, is_effect
             if not is_start:
                 _frees.append(free_con_eff)'''
 
-    if (not is_start) and is_effect:
-        _con_eff.append(['not', action_started_predicate])
-    if (is_start and is_effect) or (not is_start and not is_effect):
+    if is_effect:
+        if not is_start:
+            _con_eff.append(['not', action_started_predicate])
+            _con_eff.append(action_ended_predicate)
+        else:
+            _con_eff.append(action_started_predicate)
+            _con_eff.append(['not', action_ended_predicate])
+    elif not is_start:
         _con_eff.append(action_started_predicate)
+
     return _con_eff
 
 
@@ -742,19 +757,30 @@ def get_start_end_action(entry, is_start, types_dict, predicates_dict, the_predi
     tag = next(it)
     assert tag == ':condition'
     _entry.append(':precondition')
-    cons = next(it)
-    predicate = [name + '-started']
-    _predicate = [name + '-started']
+    conditions = next(it)
+    started_predicate = [name + '-started']
+    started_effect = [name + '-started']
+    started_effect.extend([s for s in params if s.startswith('?')])
+    started_predicate.extend(params)
+    ended_predicate = [name + '-ended']
+    ended_effect = [name + '-ended']
+    ended_effect.extend([s for s in params if s.startswith('?')])
+    ended_predicate.extend(params)
 
+    # add start and end predicates only once
     if is_start:
-        the_predicates.append(parse_predicate(_predicate))
-    res = add_start_end_eff_con(cons, predicate, is_start, False, types_dict, predicates_dict, action_name, overalls)
+        the_predicates.append(parse_predicate(started_predicate))
+        the_predicates.append(parse_predicate(ended_predicate))
+
+    res = add_start_end_eff_con(conditions, started_effect, ended_effect, is_start, False, types_dict,
+                                predicates_dict, action_name, overalls)
     _entry.append(res)
     tag = next(it)
     assert tag == ':effect'
     _entry.append(tag)
-    cons = next(it)
-    eff = add_start_end_eff_con(cons, predicate, is_start, True, types_dict, predicates_dict, action_name, overalls)
+    conditions = next(it)
+    eff = add_start_end_eff_con(conditions, started_effect, ended_effect, is_start, True, types_dict,
+                                predicates_dict, action_name, overalls)
     _entry.append(eff)
 
     return _entry
