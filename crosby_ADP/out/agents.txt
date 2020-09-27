@@ -1,0 +1,419 @@
+public variables: 
+   19
+   0_var48
+      axioms: 
+      Atom mended(fuse9)
+      NegatedAtom mended(fuse9)
+   1_var47
+      axioms: 
+      Atom mended(fuse8)
+      NegatedAtom mended(fuse8)
+   2_var46
+      axioms: 
+      Atom mended(fuse7)
+      NegatedAtom mended(fuse7)
+   3_var45
+      axioms: 
+      Atom mended(fuse6)
+      NegatedAtom mended(fuse6)
+   4_var44
+      axioms: 
+      Atom mended(fuse5)
+      NegatedAtom mended(fuse5)
+   5_var43
+      axioms: 
+      Atom mended(fuse4)
+      NegatedAtom mended(fuse4)
+   6_var42
+      axioms: 
+      Atom mended(fuse3)
+      NegatedAtom mended(fuse3)
+   7_var41
+      axioms: 
+      Atom mended(fuse2)
+      NegatedAtom mended(fuse2)
+   8_var40
+      axioms: 
+      Atom mended(fuse18)
+      NegatedAtom mended(fuse18)
+   9_var39
+      axioms: 
+      Atom mended(fuse17)
+      NegatedAtom mended(fuse17)
+public operators: 
+   0
+------------------------------Agent 0------------------------------ 
+variables: 
+   2
+var14
+   axioms: 
+   Atom light(match9)
+   NegatedAtom light(match9)
+var29
+   axioms: 
+   Atom light_match-started(match9)
+   Atom unused(match9)
+   <none of those>
+operators: 
+   23
+   0_mend_fuse-start fuse6 match9
+   1_mend_fuse-start fuse5 match9
+   2_mend_fuse-start fuse4 match9
+   3_mend_fuse-start fuse3 match9
+   4_mend_fuse-start fuse8 match9
+   5_mend_fuse-start fuse17 match9
+   6_mend_fuse-start fuse16 match9
+   7_mend_fuse-start fuse7 match9
+   8_mend_fuse-start fuse15 match9
+   9_mend_fuse-start fuse2 match9
+
+------------------------------Agent 1------------------------------ 
+variables: 
+   2
+var13
+   axioms: 
+   Atom light(match8)
+   NegatedAtom light(match8)
+var28
+   axioms: 
+   Atom light_match-started(match8)
+   Atom unused(match8)
+   <none of those>
+operators: 
+   23
+   0_mend_fuse-start fuse7 match8
+   1_mend_fuse-start fuse6 match8
+   2_mend_fuse-start fuse3 match8
+   3_mend_fuse-start fuse2 match8
+   4_mend_fuse-start fuse8 match8
+   5_mend_fuse-start fuse16 match8
+   6_mend_fuse-start fuse12 match8
+   7_mend_fuse-start fuse18 match8
+   8_mend_fuse-start fuse11 match8
+   9_mend_fuse-start fuse10 match8
+
+------------------------------Agent 2------------------------------ 
+variables: 
+   2
+var12
+   axioms: 
+   Atom light(match7)
+   NegatedAtom light(match7)
+var27
+   axioms: 
+   Atom light_match-started(match7)
+   Atom unused(match7)
+   <none of those>
+operators: 
+   23
+   0_mend_fuse-start fuse9 match7
+   1_mend_fuse-start fuse7 match7
+   2_mend_fuse-start fuse6 match7
+   3_mend_fuse-start fuse5 match7
+   4_mend_fuse-start fuse4 match7
+   5_mend_fuse-start fuse16 match7
+   6_mend_fuse-start fuse15 match7
+   7_mend_fuse-start fuse13 match7
+   8_mend_fuse-start fuse3 match7
+   9_mend_fuse-start fuse2 match7
+
+------------------------------Agent 3------------------------------ 
+variables: 
+   2
+var11
+   axioms: 
+   Atom light(match6)
+   NegatedAtom light(match6)
+var26
+   axioms: 
+   Atom light_match-started(match6)
+   Atom unused(match6)
+   <none of those>
+operators: 
+   23
+   0_mend_fuse-start fuse6 match6
+   1_mend_fuse-start fuse5 match6
+   2_mend_fuse-start fuse3 match6
+   3_mend_fuse-start fuse2 match6
+   4_mend_fuse-start fuse18 match6
+   5_mend_fuse-start fuse8 match6
+   6_mend_fuse-start fuse16 match6
+   7_mend_fuse-start fuse15 match6
+   8_mend_fuse-start fuse14 match6
+   9_mend_fuse-start fuse13 match6
+
+------------------------------Agent 4------------------------------ 
+variables: 
+   2
+var10
+   axioms: 
+   Atom light(match5)
+   NegatedAtom light(match5)
+var25
+   axioms: 
+   Atom light_match-started(match5)
+   Atom unused(match5)
+   <none of those>
+operators: 
+   23
+   0_mend_fuse-start fuse8 match5
+   1_mend_fuse-start fuse6 match5
+   2_mend_fuse-start fuse5 match5
+   3_mend_fuse-start fuse3 match5
+   4_mend_fuse-start fuse2 match5
+   5_mend_fuse-start fuse9 match5
+   6_mend_fuse-start fuse18 match5
+   7_mend_fuse-start fuse17 match5
+   8_mend_fuse-start fuse16 match5
+   9_mend_fuse-start fuse14 match5
+
+------------------------------Agent 5------------------------------ 
+variables: 
+   2
+var9
+   axioms: 
+   Atom light(match4)
+   NegatedAtom light(match4)
+var24
+   axioms: 
+   Atom light_match-started(match4)
+   Atom unused(match4)
+   <none of those>
+operators: 
+   23
+   0_mend_fuse-start fuse9 match4
+   1_mend_fuse-start fuse8 match4
+   2_mend_fuse-start fuse6 match4
+   3_mend_fuse-start fuse5 match4
+   4_mend_fuse-start fuse3 match4
+   5_mend_fuse-start fuse18 match4
+   6_mend_fuse-start fuse7 match4
+   7_mend_fuse-start fuse17 match4
+   8_mend_fuse-start fuse16 match4
+   9_mend_fuse-start fuse4 match4
+
+------------------------------Agent 6------------------------------ 
+variables: 
+   2
+var8
+   axioms: 
+   Atom light(match3)
+   NegatedAtom light(match3)
+var23
+   axioms: 
+   Atom light_match-started(match3)
+   Atom unused(match3)
+   <none of those>
+operators: 
+   23
+   0_mend_fuse-start fuse9 match3
+   1_mend_fuse-start fuse8 match3
+   2_mend_fuse-start fuse6 match3
+   3_mend_fuse-start fuse5 match3
+   4_mend_fuse-start fuse4 match3
+   5_mend_fuse-start fuse3 match3
+   6_mend_fuse-start fuse15 match3
+   7_mend_fuse-start fuse2 match3
+   8_mend_fuse-start fuse14 match3
+   9_mend_fuse-start fuse18 match3
+
+------------------------------Agent 7------------------------------ 
+variables: 
+   2
+var7
+   axioms: 
+   Atom light(match2)
+   NegatedAtom light(match2)
+var22
+   axioms: 
+   Atom light_match-started(match2)
+   Atom unused(match2)
+   <none of those>
+operators: 
+   23
+   0_mend_fuse-start fuse7 match2
+   1_mend_fuse-start fuse8 match2
+   2_mend_fuse-start fuse4 match2
+   3_mend_fuse-start fuse3 match2
+   4_mend_fuse-start fuse2 match2
+   5_mend_fuse-start fuse16 match2
+   6_mend_fuse-start fuse18 match2
+   7_mend_fuse-start fuse15 match2
+   8_mend_fuse-start fuse14 match2
+   9_mend_fuse-start fuse9 match2
+
+------------------------------Agent 8------------------------------ 
+variables: 
+   2
+var6
+   axioms: 
+   Atom light(match14)
+   NegatedAtom light(match14)
+var21
+   axioms: 
+   Atom light_match-started(match14)
+   Atom unused(match14)
+   <none of those>
+operators: 
+   23
+   0_mend_fuse-start fuse7 match14
+   1_mend_fuse-start fuse9 match14
+   2_mend_fuse-start fuse6 match14
+   3_mend_fuse-start fuse4 match14
+   4_mend_fuse-start fuse3 match14
+   5_mend_fuse-start fuse18 match14
+   6_mend_fuse-start fuse17 match14
+   7_mend_fuse-start fuse16 match14
+   8_mend_fuse-start fuse14 match14
+   9_mend_fuse-start fuse12 match14
+
+------------------------------Agent 9------------------------------ 
+variables: 
+   2
+var5
+   axioms: 
+   Atom light(match13)
+   NegatedAtom light(match13)
+var20
+   axioms: 
+   Atom light_match-started(match13)
+   Atom unused(match13)
+   <none of those>
+operators: 
+   23
+   0_mend_fuse-start fuse6 match13
+   1_mend_fuse-start fuse5 match13
+   2_mend_fuse-start fuse9 match13
+   3_mend_fuse-start fuse3 match13
+   4_mend_fuse-start fuse18 match13
+   5_mend_fuse-start fuse17 match13
+   6_mend_fuse-start fuse4 match13
+   7_mend_fuse-start fuse14 match13
+   8_mend_fuse-start fuse13 match13
+   9_mend_fuse-start fuse15 match13
+
+------------------------------Agent 10------------------------------ 
+variables: 
+   2
+var4
+   axioms: 
+   Atom light(match12)
+   NegatedAtom light(match12)
+var19
+   axioms: 
+   Atom light_match-started(match12)
+   Atom unused(match12)
+   <none of those>
+operators: 
+   23
+   0_mend_fuse-start fuse9 match12
+   1_mend_fuse-start fuse7 match12
+   2_mend_fuse-start fuse6 match12
+   3_mend_fuse-start fuse3 match12
+   4_mend_fuse-start fuse5 match12
+   5_mend_fuse-start fuse18 match12
+   6_mend_fuse-start fuse17 match12
+   7_mend_fuse-start fuse8 match12
+   8_mend_fuse-start fuse16 match12
+   9_mend_fuse-start fuse15 match12
+
+------------------------------Agent 11------------------------------ 
+variables: 
+   2
+var3
+   axioms: 
+   Atom light(match11)
+   NegatedAtom light(match11)
+var18
+   axioms: 
+   Atom light_match-started(match11)
+   Atom unused(match11)
+   <none of those>
+operators: 
+   23
+   0_mend_fuse-start fuse8 match11
+   1_mend_fuse-start fuse6 match11
+   2_mend_fuse-start fuse5 match11
+   3_mend_fuse-start fuse2 match11
+   4_mend_fuse-start fuse18 match11
+   5_mend_fuse-start fuse17 match11
+   6_mend_fuse-start fuse3 match11
+   7_mend_fuse-start fuse16 match11
+   8_mend_fuse-start fuse15 match11
+   9_mend_fuse-start fuse14 match11
+
+------------------------------Agent 12------------------------------ 
+variables: 
+   2
+var2
+   axioms: 
+   Atom light(match10)
+   NegatedAtom light(match10)
+var17
+   axioms: 
+   Atom light_match-started(match10)
+   Atom unused(match10)
+   <none of those>
+operators: 
+   23
+   0_mend_fuse-start fuse9 match10
+   1_mend_fuse-start fuse8 match10
+   2_mend_fuse-start fuse7 match10
+   3_mend_fuse-start fuse5 match10
+   4_mend_fuse-start fuse6 match10
+   5_mend_fuse-start fuse4 match10
+   6_mend_fuse-start fuse15 match10
+   7_mend_fuse-start fuse14 match10
+   8_mend_fuse-start fuse13 match10
+   9_mend_fuse-start fuse12 match10
+
+------------------------------Agent 13------------------------------ 
+variables: 
+   2
+var1
+   axioms: 
+   Atom light(match1)
+   NegatedAtom light(match1)
+var16
+   axioms: 
+   Atom light_match-started(match1)
+   Atom unused(match1)
+   <none of those>
+operators: 
+   23
+   0_mend_fuse-start fuse6 match1
+   1_mend_fuse-start fuse7 match1
+   2_mend_fuse-start fuse2 match1
+   3_mend_fuse-start fuse18 match1
+   4_mend_fuse-start fuse8 match1
+   5_mend_fuse-start fuse4 match1
+   6_mend_fuse-start fuse17 match1
+   7_mend_fuse-start fuse5 match1
+   8_mend_fuse-start fuse15 match1
+   9_mend_fuse-start fuse16 match1
+
+------------------------------Agent 14------------------------------ 
+variables: 
+   2
+var0
+   axioms: 
+   Atom light(match0)
+   NegatedAtom light(match0)
+var15
+   axioms: 
+   Atom light_match-started(match0)
+   Atom unused(match0)
+   <none of those>
+operators: 
+   23
+   0_mend_fuse-start fuse8 match0
+   1_mend_fuse-start fuse4 match0
+   2_mend_fuse-start fuse3 match0
+   3_mend_fuse-start fuse17 match0
+   4_mend_fuse-start fuse15 match0
+   5_mend_fuse-start fuse14 match0
+   6_mend_fuse-start fuse13 match0
+   7_mend_fuse-start fuse6 match0
+   8_mend_fuse-start fuse12 match0
+   9_mend_fuse-start fuse11 match0
+

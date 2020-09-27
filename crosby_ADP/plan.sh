@@ -27,37 +27,7 @@
 #rm out/domain.pddl
 #rm out/problem.pddl
 #./ma-to-pddl.py ../benchmarks/unfactored/$1/$2 domain problem out
-#echo "" > results.txt
-for d in "Test Domains"/*/ ; do
-    DOMDIR="$d"domains/
-    DOMAIN="$d"domain.pddl
-    for f in  3 5 7 10 14 16 18 20 ; do
-        PROBLEM="$d"instances/instance-"$f".pddl
-        if [ -d "$DOMDIR" ]; then
-            DOMAIN="$DOMDIR"domain-"$f".pddl
-        fi
-	FOUND="Solution found!"
-	OUT=$(timeout 30m ./fast-downward.py "$DOMAIN" "$PROBLEM" --heuristic 'hff=adp(cost_type=1)' --search 'lazy_greedy(hff, preferred=hff)')
-	#echo "$OUT"
-	v=${d::-1}
-	FINAL=$(basename "$v"),$f
-	if echo "$OUT" | grep -q "$FOUND"; then
-	    [[ $OUT =~ (Search time: [0-9]*.[0-9]*) ]] && FINAL=$FINAL,"${BASH_REMATCH[1]//[^0-9.]}"
-	else
-	    FINAL=$FINAL,-1
-	fi
-	[[ $OUT =~ (No agents found) ]] && FINAL=$FINAL,1
-        [[ $OUT =~ ([0-9]* agents left) ]] && FINAL=$FINAL,"${BASH_REMATCH[1]//[^0-9]}"     
-	echo "$FINAL" >> results.txt
-	echo "$FINAL"
-
-    done
-done
-
-
+./fast-downward.py out/domain.pddl out/problem.pddl --heuristic 'hff=adp(cost_type=1)' --search 'lazy_greedy(hff, preferred=hff)'
 #./fast-downward.py out/domain.pddl out/problem.pddl --search 'astar(lmcut())'
-#cp sas_plan ../plan.out
-#./mockup-planner ../benchmarks/unfactored/$1/$2/domain.pddl ../benchmarks/unfactored/$1/$2/problem.pddl ../plan.outSOURCE = "Solution found!"
-
-
-
+cp sas_plan ../plan.out
+#./mockup-planner ../benchmarks/unfactored/$1/$2/domain.pddl ../benchmarks/unfactored/$1/$2/problem.pddl ../plan.out

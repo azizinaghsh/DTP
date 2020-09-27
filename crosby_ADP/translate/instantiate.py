@@ -56,7 +56,6 @@ def instantiate(task, model):
             inst_action = action.instantiate(variable_mapping, init_facts,
                                              fluent_facts, type_to_objects,
                                              task.use_min_cost_metric)
-            #inst_action.duration = action.duration
             if inst_action:
                 instantiated_actions.append(inst_action)
         elif isinstance(atom.predicate, pddl.Axiom):

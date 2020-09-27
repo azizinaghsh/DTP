@@ -1,7 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f347592a-f48e-4844-bd85-c561db310e22" name="Default Changelist" comment="" />
+    <list default="true" id="f347592a-f48e-4844-bd85-c561db310e22" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../output" beforeDir="false" afterPath="$PROJECT_DIR$/../output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output.sas" beforeDir="false" afterPath="$PROJECT_DIR$/../output.sas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../plan.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../plan.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../preprocess/Makefile.depend" beforeDir="false" afterPath="$PROJECT_DIR$/../preprocess/Makefile.depend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../preprocess/preprocess" beforeDir="false" afterPath="$PROJECT_DIR$/../preprocess/preprocess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../results.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../results.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sas_plan" beforeDir="false" afterPath="$PROJECT_DIR$/../sas_plan" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../search/downward-release" beforeDir="false" afterPath="$PROJECT_DIR$/../search/downward-release" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/translate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/translate.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/instantiate.py" beforeDir="false" afterPath="$PROJECT_DIR$/instantiate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/problem.pddl" beforeDir="false" afterPath="$PROJECT_DIR$/out/problem.pddl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.sas" beforeDir="false" afterPath="$PROJECT_DIR$/output.sas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pddl/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/pddl/actions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pddl_parser/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pddl_parser/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pddl_parser/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pddl_parser/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pddl_parser/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pddl_parser/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pddl_parser/.idea/pddl_parser.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pddl_parser/.idea/pddl_parser.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pddl_parser/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pddl_parser/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pddl_parser/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pddl_parser/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pddl_parser/parsing_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/pddl_parser/parsing_functions.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,8 +69,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../venv2" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="translate" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -64,6 +114,30 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
@@ -74,90 +148,133 @@
       <screen x="70" y="27" width="1850" height="1052" />
     </state>
     <state x="627" y="233" width="732" height="650" key="#Inspections/70.27.1850.1052@70.27.1850.1052" timestamp="1599118586568" />
+    <state x="677" y="427" width="558" height="284" key="#Updates" timestamp="1600943934336">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="677" y="427" width="558" height="284" key="#Updates/0.27.1920.1053@0.27.1920.1053" timestamp="1600943934335" />
     <state x="457" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599118387747">
       <screen x="70" y="27" width="1850" height="1052" />
     </state>
     <state x="457" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/70.27.1850.1052@70.27.1850.1052" timestamp="1599118387747" />
-    <state width="1277" height="506" key="DebuggerActiveHint" timestamp="1599219971257">
-      <screen x="70" y="27" width="1850" height="1052" />
+    <state width="1460" height="507" key="DebuggerActiveHint" timestamp="1601209153042">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
+    <state width="1460" height="507" key="DebuggerActiveHint/0.27.1920.1053@0.27.1920.1053" timestamp="1601209153042" />
     <state width="1277" height="506" key="DebuggerActiveHint/70.27.1850.1052@70.27.1850.1052" timestamp="1599219971257" />
-    <state x="781" y="307" width="424" height="497" key="FileChooserDialogImpl" timestamp="1597559892259">
-      <screen x="70" y="27" width="1850" height="1052" />
+    <state x="100" y="112" width="1720" height="858" key="DiffContextDialog" timestamp="1600944431359">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
+    <state x="100" y="112" width="1720" height="858" key="DiffContextDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1600944431359" />
+    <state x="500" y="234" width="424" height="496" key="FileChooserDialogImpl" timestamp="1601206453512">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="500" y="234" width="424" height="496" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1601206453512" />
     <state x="781" y="307" width="424" height="497" key="FileChooserDialogImpl/70.27.1850.1052@70.27.1850.1052" timestamp="1597559892259" />
-    <state width="925" height="348" key="GridCell.Tab.0.bottom" timestamp="1599221721800">
-      <screen x="70" y="27" width="1850" height="1052" />
+    <state x="553" y="249" width="424" height="496" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1600310928736" />
+    <state width="1897" height="235" key="GridCell.Tab.0.bottom" timestamp="1601224305933">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
+    <state width="1897" height="235" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1601224305933" />
     <state width="925" height="348" key="GridCell.Tab.0.bottom/70.27.1850.1052@70.27.1850.1052" timestamp="1599221721800" />
-    <state width="925" height="348" key="GridCell.Tab.0.center" timestamp="1599221721798">
-      <screen x="70" y="27" width="1850" height="1052" />
+    <state width="1377" height="317" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1600310369909" />
+    <state width="1897" height="235" key="GridCell.Tab.0.center" timestamp="1601224305933">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
+    <state width="1897" height="235" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1601224305933" />
     <state width="925" height="348" key="GridCell.Tab.0.center/70.27.1850.1052@70.27.1850.1052" timestamp="1599221721798" />
-    <state width="925" height="348" key="GridCell.Tab.0.left" timestamp="1599221721798">
-      <screen x="70" y="27" width="1850" height="1052" />
+    <state width="1377" height="317" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1600310369909" />
+    <state width="1897" height="235" key="GridCell.Tab.0.left" timestamp="1601224305933">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
+    <state width="1897" height="235" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1601224305933" />
     <state width="925" height="348" key="GridCell.Tab.0.left/70.27.1850.1052@70.27.1850.1052" timestamp="1599221721798" />
-    <state width="925" height="348" key="GridCell.Tab.0.right" timestamp="1599221721798">
-      <screen x="70" y="27" width="1850" height="1052" />
+    <state width="1377" height="317" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1600310369909" />
+    <state width="1897" height="235" key="GridCell.Tab.0.right" timestamp="1601224305933">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
+    <state width="1897" height="235" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1601224305933" />
     <state width="925" height="348" key="GridCell.Tab.0.right/70.27.1850.1052@70.27.1850.1052" timestamp="1599221721798" />
-    <state width="925" height="348" key="GridCell.Tab.1.bottom" timestamp="1599221722131">
-      <screen x="70" y="27" width="1850" height="1052" />
+    <state width="1377" height="317" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1600310369909" />
+    <state width="1897" height="235" key="GridCell.Tab.1.bottom" timestamp="1601224305935">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
+    <state width="1897" height="235" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1601224305935" />
     <state width="925" height="348" key="GridCell.Tab.1.bottom/70.27.1850.1052@70.27.1850.1052" timestamp="1599221722131" />
-    <state width="925" height="348" key="GridCell.Tab.1.center" timestamp="1599221722131">
-      <screen x="70" y="27" width="1850" height="1052" />
+    <state width="1377" height="317" key="GridCell.Tab.1.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1600310369910" />
+    <state width="1897" height="235" key="GridCell.Tab.1.center" timestamp="1601224305935">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
+    <state width="1897" height="235" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1601224305935" />
     <state width="925" height="348" key="GridCell.Tab.1.center/70.27.1850.1052@70.27.1850.1052" timestamp="1599221722131" />
-    <state width="925" height="348" key="GridCell.Tab.1.left" timestamp="1599221722131">
-      <screen x="70" y="27" width="1850" height="1052" />
+    <state width="1377" height="317" key="GridCell.Tab.1.center/72.27.1848.1053@72.27.1848.1053" timestamp="1600310369910" />
+    <state width="1897" height="235" key="GridCell.Tab.1.left" timestamp="1601224305933">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
+    <state width="1897" height="235" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1601224305933" />
     <state width="925" height="348" key="GridCell.Tab.1.left/70.27.1850.1052@70.27.1850.1052" timestamp="1599221722131" />
-    <state width="925" height="348" key="GridCell.Tab.1.right" timestamp="1599221722131">
-      <screen x="70" y="27" width="1850" height="1052" />
+    <state width="1377" height="317" key="GridCell.Tab.1.left/72.27.1848.1053@72.27.1848.1053" timestamp="1600310369910" />
+    <state width="1897" height="235" key="GridCell.Tab.1.right" timestamp="1601224305935">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
+    <state width="1897" height="235" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1601224305935" />
     <state width="925" height="348" key="GridCell.Tab.1.right/70.27.1850.1052@70.27.1850.1052" timestamp="1599221722131" />
-    <state x="487" y="166" width="1016" height="743" key="SettingsEditor" timestamp="1599119151181">
-      <screen x="70" y="27" width="1850" height="1052" />
+    <state width="1377" height="317" key="GridCell.Tab.1.right/72.27.1848.1053@72.27.1848.1053" timestamp="1600310369910" />
+    <state x="433" y="131" width="1016" height="742" key="SettingsEditor" timestamp="1601206463047">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
+    <state x="433" y="131" width="1016" height="742" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1601206463047" />
     <state x="487" y="166" width="1016" height="743" key="SettingsEditor/70.27.1850.1052@70.27.1850.1052" timestamp="1599119151181" />
+    <state x="489" y="146" width="1016" height="742" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1600313294034" />
     <state x="779" y="467" width="428" height="183" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599213184013">
       <screen x="70" y="27" width="1850" height="1052" />
     </state>
     <state x="779" y="467" width="428" height="183" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/70.27.1850.1052@70.27.1850.1052" timestamp="1599213184013" />
-    <state x="914" y="223" width="706" height="807" key="find.popup" timestamp="1599118920176">
-      <screen x="70" y="27" width="1850" height="1052" />
+    <state x="876" y="223" width="733" height="808" key="find.popup" timestamp="1601206295570">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
+    <state x="876" y="223" width="733" height="808" key="find.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1601206295570" />
     <state x="914" y="223" width="706" height="807" key="find.popup/70.27.1850.1052@70.27.1850.1052" timestamp="1599118920176" />
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1601206323755">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1601206323755" />
+    <state x="724" y="380" width="540" height="349" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1600310627724">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="724" y="380" width="540" height="349" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1600310627724" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/instantiate.py</url>
-          <line>55</line>
-          <option name="timeStamp" value="218" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pddl_parser/parsing_functions.py</url>
-          <line>524</line>
-          <option name="timeStamp" value="219" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/translate.py</url>
           <line>629</line>
           <option name="timeStamp" value="220" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pddl_parser/parsing_functions.py</url>
-          <line>520</line>
-          <option name="timeStamp" value="241" />
+          <url>file://$PROJECT_DIR$/translate.py</url>
+          <line>643</line>
+          <option name="timeStamp" value="250" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pddl_parser/parsing_functions.py</url>
-          <line>408</line>
-          <option name="timeStamp" value="243" />
+          <url>file://$PROJECT_DIR$/translate.py</url>
+          <line>537</line>
+          <option name="timeStamp" value="253" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/translate.py</url>
+          <line>636</line>
+          <option name="timeStamp" value="254" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/translate.py</url>
+          <line>490</line>
+          <option name="timeStamp" value="255" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/build_model.py</url>
+          <line>307</line>
+          <option name="timeStamp" value="257" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

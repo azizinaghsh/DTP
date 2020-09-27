@@ -2,12 +2,14 @@ from __future__ import print_function
 
 import copy
 
+import f_expression
+
 from . import conditions
 
 
 class Action(object):
     def __init__(self, name, parameters, num_external_parameters,
-                 precondition, effects, cost):
+                 precondition, effects, cost, duration=0):
         assert 0 <= num_external_parameters <= len(parameters)
         self.name = name
         self.parameters = parameters
@@ -20,8 +22,8 @@ class Action(object):
         self.precondition = precondition
         self.effects = effects
         self.cost = cost
-        self.duration = 0
-        self.uniquify_variables() # TODO: uniquify variables in cost?
+        self.duration = duration
+        self.uniquify_variables()  # TODO: uniquify variables in cost?
 
     def __repr__(self):
         return "<Action %r at %#x>" % (self.name, id(self))
@@ -34,7 +36,7 @@ class Action(object):
         for eff in self.effects:
             eff.dump()
         print("Cost:")
-        if(self.cost):
+        if (self.cost):
             self.cost.dump()
         else:
             print("  None")
@@ -68,7 +70,7 @@ class Action(object):
         return result
 
     def instantiate(self, var_mapping, init_facts, fluent_facts,
-        objects_by_type, metric):
+                    objects_by_type, metric):
         """Return a PropositionalAction which corresponds to the instantiation of
         this action with the arguments in var_mapping. Only fluent parts of the
         conditions (those in fluent_facts) are included. init_facts are evaluated
@@ -90,6 +92,12 @@ class Action(object):
         for eff in self.effects:
             eff.instantiate(var_mapping, init_facts, fluent_facts,
                             objects_by_type, effects)
+
+        dur = self.duration
+
+        if isinstance(self.duration, f_expression.NumericConstant):
+            dur = self.duration.instantiate(var_mapping, init_facts)
+
         if effects:
             if metric:
                 if self.cost is None:
@@ -98,18 +106,18 @@ class Action(object):
                     cost = int(self.cost.instantiate(var_mapping, init_facts).expression.value)
             else:
                 cost = 1
-            return PropositionalAction(name, precondition, effects, cost)
+            return PropositionalAction(name, precondition, effects, cost, dur)
         else:
             return None
 
 
 class PropositionalAction:
-    def __init__(self, name, precondition, effects, cost):
+    def __init__(self, name, precondition, effects, cost, duration):
         self.name = name
         self.precondition = precondition
         self.add_effects = []
         self.del_effects = []
-        self.duration = 0
+        self.duration = duration
         for condition, effect in effects:
             if not effect.negated:
                 self.add_effects.append((condition, effect))

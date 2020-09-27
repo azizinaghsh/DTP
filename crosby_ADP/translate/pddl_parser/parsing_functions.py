@@ -290,11 +290,17 @@ def parse_action(alist, type_dict, predicate_dict):
                 effect_list, eff, type_dict, predicate_dict)
         except ValueError as e:
             raise SystemExit("Error in Action %s\nReason: %s." % (name, e))
+    next(iterator) == ":duration"
+    duration = next(iterator)
+    if len(duration[2]) == 1:
+        duration = pddl.NumericConstant(int(duration[2]))
+    else:
+        duration = pddl.f_expression.PrimitiveNumericExpression(duration[2][0], duration[2][1:])
     for rest in iterator:
         assert False, rest
     if eff:
         return pddl.Action(name, parameters, len(parameters),
-                           precondition, eff, cost)
+                           precondition, eff, cost, duration)
     else:
         return None
 
@@ -344,8 +350,7 @@ def append_effect_for_overall(action, is_free_name, overall, predicate_dict):
     overall_a_list = [is_free_name]
     overall_a_list.extend(list(overall.args))
     eff_out = []
-    add_effect(pddl.SimpleEffect(parse_literal(overall_a_list, {}, predicate_dict)), eff_out)
-    eff_out[0].literal.negated = action.name.endswith('start')
+    add_effect(pddl.SimpleEffect(parse_literal(overall_a_list, {}, predicate_dict, action.name.endswith('start'))), eff_out)
     action.effects.extend(eff_out)
 
 
@@ -375,8 +380,21 @@ def unify_par_name(a1, a2, free_cond, violating_eff):
     return True
 
 
-def process_is_free_propositions(overalls, actions, predicates, predicate_dict, frees):
-    # frees: list
+def add_overall_to_start_and_end(overalls, actions, predicates, predicate_dict):
+    for a1 in actions:
+        if a1.name in overalls.keys():
+            for overall in overalls[a1.name]:
+                skip = False
+                if a1.name.endswith('start'):
+                    for eff in a1.effects:
+                        if eff.literal.predicate == overall.predicate and eff.literal.negated ^ overall.predicate.negated:
+                            skip = True
+                    if not skip:
+                        append_precondition(a1, overall)
+
+
+def process_is_free_propositions(overalls, actions, predicates, predicate_dict):
+    frees = dict()
     for a1 in actions:
         # a1: pddl.Action
         if a1.name in overalls.keys():
@@ -392,7 +410,8 @@ def process_is_free_propositions(overalls, actions, predicates, predicate_dict, 
                 is_free_predicate.name = is_free_predicate_name
                 cond = copy.deepcopy(overall)
                 cond.predicate = is_free_predicate_name
-                cond.negated = False
+                if cond.negated:
+                    cond = cond.negate()
                 append_precondition(a1, cond)
                 if is_free_predicate not in predicates:
                     predicates.append(is_free_predicate)
@@ -406,7 +425,7 @@ def process_is_free_propositions(overalls, actions, predicates, predicate_dict, 
                                     append_precondition(a2, cond)
                 append_effect_for_overall(a1, is_free_predicate_name, overall, predicate_dict)
 
-    return
+    return frees
 
 
 def POPF_compress(actions):
@@ -519,9 +538,10 @@ def parse_task(domain_pddl, task_pddl):
     domain_name, domain_requirements, types, type_dict, constants, predicates, predicate_dict, functions, actions, \
     axioms, overalls = parse_domain_pddl(domain_pddl)
     frees = dict()
-    process_is_free_propositions(overalls, actions, predicates, predicate_dict, frees)
-    # can_be_compressed = analyze_compressible(actions)
-    actions = merge_actions(actions, None)
+    frees = process_is_free_propositions(overalls, actions, predicates, predicate_dict)
+    #add_overall_to_start_and_end(overalls, actions, predicates, predicate_dict)
+    can_be_compressed = analyze_compressible(actions)
+    actions = merge_actions(actions, can_be_compressed)
     task_name, task_domain_name, task_requirements, objects, init, goal, use_metric = parse_task_pddl(task_pddl,
                                                                                                       type_dict,
                                                                                                       predicate_dict,
@@ -721,10 +741,10 @@ def add_start_end_eff_con(eff_con, action_started_predicate, action_ended_predic
     if is_effect:
         if not is_start:
             _con_eff.append(['not', action_started_predicate])
-            _con_eff.append(action_ended_predicate)
+            #_con_eff.append(action_ended_predicate)
         else:
             _con_eff.append(action_started_predicate)
-            _con_eff.append(['not', action_ended_predicate])
+            #_con_eff.append(['not', action_ended_predicate])
     elif not is_start:
         _con_eff.append(action_started_predicate)
 
@@ -749,11 +769,12 @@ def get_start_end_action(entry, is_start, types_dict, predicates_dict, the_predi
     tag = next(it)
     assert tag == ':parameters'
     _entry.append(tag)
-    params = next(it);
+    params = next(it)
     _entry.append(params)
     tag = next(it)
     assert tag == ':duration'
-    next(it)
+    duration = next(it)
+
     tag = next(it)
     assert tag == ':condition'
     _entry.append(':precondition')
@@ -770,7 +791,7 @@ def get_start_end_action(entry, is_start, types_dict, predicates_dict, the_predi
     # add start and end predicates only once
     if is_start:
         the_predicates.append(parse_predicate(started_predicate))
-        the_predicates.append(parse_predicate(ended_predicate))
+        #the_predicates.append(parse_predicate(ended_predicate))
 
     res = add_start_end_eff_con(conditions, started_effect, ended_effect, is_start, False, types_dict,
                                 predicates_dict, action_name, overalls)
@@ -783,26 +804,47 @@ def get_start_end_action(entry, is_start, types_dict, predicates_dict, the_predi
                                 predicates_dict, action_name, overalls)
     _entry.append(eff)
 
+    _entry.append(':duration')
+    _entry.append(duration)
     return _entry
 
 
-def add_all_frees_to_init(free, objects_dict, arg_index, assignment, assignments):
+def add_all_frees_to_init(free, type_dict, objects_dict, arg_index, assignment, assignments):
     if arg_index == len(free):
         return assignment
     if arg_index == 0:
         assignment = [free[0] + '-free']
         arg_index += 1
-    for var in objects_dict[free[arg_index]]:
+    children = get_child_types(type_dict, free[arg_index])
+    children.append(free[arg_index])
+    objects = []
+    for c in children:
+        if c in objects_dict.keys():
+            objects.extend(objects_dict[c])
+    for var in objects:
         if len(assignment) <= arg_index:
             assignment.append('')
         assignment[arg_index] = var
-        final_assignment = add_all_frees_to_init(free, objects_dict, arg_index + 1, assignment, assignments)
+        final_assignment = add_all_frees_to_init(free, type_dict, objects_dict, arg_index + 1, assignment, assignments)
         if (final_assignment != None):
-            copy_assign = [];
+            copy_assign = []
             for s in final_assignment:
                 copy_assign.append(s)
             assignments.append(copy_assign)
     return
+
+
+def get_child_types(type_dict, parent_type):
+    children = []
+    for _ in range(len(type_dict)):
+        for type1 in type_dict:
+            if parent_type in type_dict[type1].supertype_names and type1 not in children:
+                children.append(type1)
+            else:
+                for type2 in type_dict[type1].supertype_names:
+                    if type2 in children and type1 not in children:
+                        children.append(type1)
+    return children
 
 
 def parse_task_pddl(task_pddl, type_dict, predicate_dict, frees):
@@ -845,9 +887,9 @@ def parse_task_pddl(task_pddl, type_dict, predicate_dict, frees):
     assignments = []
     for free in frees.values():
         free_assignments = []
-        add_all_frees_to_init(free, objects_dict, 0, [], free_assignments)
+        add_all_frees_to_init(free, type_dict, objects_dict, 0, [], free_assignments)
         assignments.extend(free_assignments)
-    init.extend(assignments);
+    init.extend(assignments)
     assert init[0] == ":init"
     initial = []
     initial_true = set()
